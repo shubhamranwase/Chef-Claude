@@ -1,4 +1,5 @@
 {
+  "homepage":"https://shubhamranwase.github.io/Travel-Journal/",
   "name": "chef_claude",
   "private": true,
   "version": "0.0.0",
@@ -6,6 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
