@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 241, 212);
+    font-family: "Inter", sans-serif;
+}
+
+.nav-container {
+    background-color: white;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    corner-shape: squircle;
+    font-size: 1.25rem;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.071);
+}
+
+.nav-icon {
+    margin-right: 0.5rem;
+    font-size: 1.75rem;
+}
+
+.nav-heading {
+    font-weight: 500;
+}
+
+main {
+    padding: 2rem 1rem 2rem ;
+}
+
+.form-add-ingredients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.form-add-ingredients input {
+    width: 400px;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    corner-shape: squircle;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.form-add-ingredients input:focus {
+    border: 2px solid rgb(167, 167, 167);
+}
+
+.form-add-ingredients button {
+    width: 200px;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    corner-shape: squircle;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+
+.form-add-ingredients button:hover {
+    cursor: pointer;
+}
+
+.form-add-ingredients button:active {
+    animation: click 0.1s ease-in-out forwards;
+}
+
+@keyframes click {
+    0% {
+    }
+    50%{
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.content-container h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.content-container ul li {
+    font-size: 1.25rem;
+    padding: 0.25rem;
+}
