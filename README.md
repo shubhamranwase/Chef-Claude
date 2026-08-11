@@ -85,17 +85,30 @@ npm run dev
 ## 📂 Project Structure
 
 ```text
+## 📂 Project Structure
 Chef-Claude/
-├── public/              # Static assets
+├── dist/                # Production build output
+├── node_modules/        # Project dependencies
+├── public/              # Public static assets
 ├── src/
-│   ├── components/      # UI Components (Header, Main, Recipe, etc.)
-│   ├── ai.js            # Hugging Face API configuration & Qwen model caller
+│   ├── assets/          # Project assets (images, icons, etc.)
+│   ├── Components/      # React components and utilities
+│   │   ├── ai.js              
+│   │   ├── ClaudeRecipe.jsx   
+│   │   ├── Header.jsx         
+│   │   ├── IngredientList.jsx 
+│   │   └── MainContent.jsx    
 │   ├── App.jsx          # Primary application logic
-│   ├── main.jsx         # Application entry point
-│   └── index.css        # Custom application styling
+│   ├── main.css         # Global application styling
+│   └── main.jsx         # Application entry point
 ├── .env                 # Environment variables (Git-ignored)
+├── .env.example         # Environment variables template
+├── .gitignore           # Git ignore rules
+├── eslint.config.js     # ESLint linting configuration
 ├── index.html           # Main HTML entry
-├── package.json         # Dependencies and scripts
+├── package-lock.json    # Exact dependency tree versions
+├── package.json         # Project metadata and scripts
+├── README.md            # Project documentation
 └── vite.config.js       # Vite configuration
 
 ```
