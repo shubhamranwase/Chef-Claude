@@ -115,4 +115,4 @@ Chef-Claude/
 
 **Shubham Ranwase**
 
-* GitHub: [@shubhamranwase](https://www.google.com/search?q=https://github.com/shubhamranwase)
+* GitHub: [@shubhamranwase](https://github.com/shubhamranwase)
