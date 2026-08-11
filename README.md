@@ -39,7 +39,7 @@ This project demonstrates a seamless integration between a dynamic React fronten
 
 Ensure you have the following installed on your machine:
 - **Node.js** (v18.0 or higher)
-- **npm** or **yarn**
+- **npm**
 - A **Hugging Face User Access Token** with inference permissions.
 
 ### Installation
@@ -109,12 +109,6 @@ Chef-Claude/
 2. **Request Recipe**: Once your list contains enough ingredients, click **Get a Recipe**.
 3. **AI Inference**: The list is sent as a prompt to `Qwen/Qwen2.5-72B-Instruct`, configured with system instructions to act as an expert chef.
 4. **Enjoy**: The rendered markdown-formatted recipe appears directly on your screen with ingredients, steps, and serving suggestions.
-
----
-
-## 📝 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
