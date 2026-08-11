@@ -12,7 +12,7 @@ This project demonstrates a seamless integration between a dynamic React fronten
 
 | Ingredient Input & Loading | AI Recipe (Ingredients) | AI Recipe (Instructions) |
 | :---: | :---: | :---: |
-| ![Chef Claude Input](https://raw.githubusercontent.com/shubhamranwase/Chef-Claude/main/Screenshot%202026-03-26%20125414.png) | ![Chef Claude Recipe Top](https://raw.githubusercontent.com/shubhamranwase/Chef-Claude/main/Screenshot%202026-03-26%20125514.png) | ![Chef Claude Recipe Bottom](https://raw.githubusercontent.com/shubhamranwase/Chef-Claude/main/Screenshot%202026-03-26%20125614.jpg) |
+| ![Chef Claude Input](Screenshot%202026-03-26%20125414.png) | ![Chef Claude Recipe Top](Screenshot%202026-03-26%20125514.png) | ![Chef Claude Recipe Bottom](Screenshot%202026-03-26%20125614.png) |
 ---
 
 ## ✨ Features
