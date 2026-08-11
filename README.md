@@ -12,7 +12,7 @@ This project demonstrates a seamless integration between a dynamic React fronten
 
 | Ingredient Input & Loading State | AI Recipe Recommendation |
 | :---: | :---: |
-| ![Chef Claude Input](Screenshot%202026-03-26%20125414.png) | ![Chef Claude Recipe Top](Screenshot%202026-03-26%20125514.png)<br><br>![Chef Claude Recipe Bottom](Screenshot%202026-03-26%20125614.jpg) |
+| ![Chef Claude Input](Screenshot%2026-03-26%125414.png) | ![Chef Claude Recipe Top](Screenshot%2026-03-26%125514.png)<br><br>![Chef Claude Recipe Bottom](Screenshot%2026-03-26%125614.png) |
 ---
 
 ## ✨ Features
