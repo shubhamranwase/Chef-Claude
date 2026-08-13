@@ -9,10 +9,9 @@ This project demonstrates a seamless integration between a dynamic React fronten
 ---
 
 ## 📸 Screenshots
-
-| Ingredient Input & Loading | AI Recipe |
-| :---: | :---: |
-| ![Chef Claude Input](readme_assets/Screenshot%2026-08-13%164549.png) | ![Chef Claude Recipe Top](readme_assets/Screenshot%2026-08-13%164616.png) ![Chef Claude Recipe Bottom](readme_assets/Screenshot%2026-08-13%164759.png) |
+| Ingredient Input | AI Recipe (Part 1) | AI Recipe (Part 2) |
+| :---: | :---: | :---: |
+| ![Chef Claude Input](readme_assets/Screenshot%202026-08-13%20164549.png) | ![Chef Claude Recipe Part 1](readme_assets/Screenshot%202026-08-13%20164616.png) | ![Chef Claude Recipe Part 2](readme_assets/Screenshot%202026-08-13%20164759.png) |
 ---
 
 ## ✨ Features
@@ -78,7 +77,8 @@ npm run dev
 
 ```
 
-
+> [!WARNING]
+> **Security Notice:** This project is currently built as a frontend-only application for demonstration purposes. As a result, the AI API keys are exposed in the client code and are vulnerable. Do not deploy this repository to a production environment as-is. In a real-world application, these keys should be securely hidden behind a backend server.
 
 ---
 
