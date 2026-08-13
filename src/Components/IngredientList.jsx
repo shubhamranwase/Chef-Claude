@@ -1,7 +1,19 @@
 export default function IngredientList(props) {
-  const list = props.ingredients.map((ingredient, index) => {
-    return <li key={index}>{ingredient}</li>;
+  const list = props.ingredients.map((ingredient) => {
+    return (
+      <li key={ingredient.id} className="ingredient-item">
+        <span>{ingredient.name}</span>
+        <button
+          type="button"
+          className="btn-delete"
+          onClick={() => props.deleteIngredient(ingredient.id)}
+        >
+          X
+        </button>
+      </li>
+    );
   });
+
   return (
     <section>
       <div className="content-container">
@@ -10,7 +22,7 @@ export default function IngredientList(props) {
           <ul className="ingredient-list">{list}</ul>
         </div>
       </div>
-      {props.ingredients.length > 3 ? (
+      {props.ingredients.length > 2 ? (
         <div className="get-recipe-cont-flex">
           <div className="get-recipe-container">
             <div className="recipe-container-inner">
