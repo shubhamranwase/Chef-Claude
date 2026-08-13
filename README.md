@@ -1,16 +1,131 @@
-# React + Vite
+# 👨‍🍳 Chef Claude: Your AI-Powered Culinary Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ever stared into a half-empty fridge wondering what to cook? Meet **Chef Claude**—a smart, responsive web application designed to eliminate meal-prep decision fatigue. 
 
-Currently, two official plugins are available:
+By simply inputting the random ingredients you have on hand, Chef Claude leverages the powerful **Qwen 2.5 72B Instruct** AI model to instantly generate delicious, customized, and easy-to-follow recipes. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project demonstrates a seamless integration between a dynamic React frontend and advanced natural language processing via the Hugging Face Inference API.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+| Ingredient Input & Loading | AI Recipe (Ingredients) | AI Recipe (Instructions) |
+| :---: | :---: | :---: |
+| ![Chef Claude Input](Screenshot%202026-03-26%20125414.png) | ![Chef Claude Recipe Top](Screenshot%202026-03-26%20125514.png) | ![Chef Claude Recipe Bottom](Screenshot%202026-03-26%20125614.png) |
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- **Dynamic Ingredient List**: Add, view, and manage pantry ingredients in real time.
+- **AI-Powered Recipe Generation**: Integrates with the Hugging Face Inference API to call `Qwen/Qwen2.5-72B-Instruct` for intelligent, context-aware recipe creation.
+- **Structured Recipe Output**: Generates complete recipes including required quantities, detailed step-by-step instructions, and serving recommendations.
+- **Interactive UI & Feedback**: Features smooth loading states (`Fetching your recipe...`) and responsive component rendering.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Vite, CSS
+- **AI Model**: `Qwen/Qwen2.5-72B-Instruct`
+- **API Integration**: Hugging Face Inference API (`@huggingface/inference`)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed on your machine:
+- **Node.js** (v18.0 or higher)
+- **npm**
+- A **Hugging Face User Access Token** with inference permissions.
+
+### Installation
+
+1. **Clone the repository:**
+```bash
+git clone [https://github.com/shubhamranwase/Chef-Claude.git](https://github.com/shubhamranwase/Chef-Claude.git)
+
+```
+
+
+2. **Navigate to the project directory:**
+```bash
+cd Chef-Claude
+
+```
+
+
+3. **Install dependencies:**
+```bash
+npm install
+
+```
+
+
+4. **Configure Environment Variables:**
+Create a `.env` file in the root directory and add your Hugging Face API key:
+```env
+VITE_HF_ACCESS_TOKEN=your_huggingface_token_here
+
+```
+
+
+5. **Start the development server:**
+```bash
+npm run dev
+
+```
+
+
+
+---
+
+## 📂 Project Structure
+
+```text
+## 📂 Project Structure
+Chef-Claude/
+├── dist/                # Production build output
+├── node_modules/        # Project dependencies
+├── public/              # Public static assets
+├── src/
+│   ├── assets/          # Project assets (images, icons, etc.)
+│   ├── Components/      # React components and utilities
+│   │   ├── ai.js              
+│   │   ├── ClaudeRecipe.jsx   
+│   │   ├── Header.jsx         
+│   │   ├── IngredientList.jsx 
+│   │   └── MainContent.jsx    
+│   ├── App.jsx          # Primary application logic
+│   ├── main.css         # Global application styling
+│   └── main.jsx         # Application entry point
+├── .env                 # Environment variables (Git-ignored)
+├── .env.example         # Environment variables template
+├── .gitignore           # Git ignore rules
+├── eslint.config.js     # ESLint linting configuration
+├── index.html           # Main HTML entry
+├── package-lock.json    # Exact dependency tree versions
+├── package.json         # Project metadata and scripts
+├── README.md            # Project documentation
+└── vite.config.js       # Vite configuration
+
+```
+
+---
+
+## 💡 How It Works
+
+1. **Input Ingredients**: Type any item available in your kitchen (e.g., *Paneer, Onion, Garlic, Potato*) into the input field and click **+ Add ingredient**.
+2. **Request Recipe**: Once your list contains enough ingredients, click **Get a Recipe**.
+3. **AI Inference**: The list is sent as a prompt to `Qwen/Qwen2.5-72B-Instruct`, configured with system instructions to act as an expert chef.
+4. **Enjoy**: The rendered markdown-formatted recipe appears directly on your screen with ingredients, steps, and serving suggestions.
+
+---
+
+## 👨‍💻 Author
+
+**Shubham Ranwase**
+
+* GitHub: [@shubhamranwase](https://github.com/shubhamranwase)
