@@ -10,7 +10,7 @@ This project demonstrates a seamless integration between a dynamic React fronten
 
 ## 📸 Screenshots
 
-| Ingredient Input & Loading | AI Recipe (Ingredients) | AI Recipe (Instructions) |
+| Ingredient Input & Loading | AI Recipe |
 | :---: | :---: |
 | ![Chef Claude Input](readme_assets/Screenshot%2026-08-13%164549.png) | ![Chef Claude Recipe Top](readme_assets/Screenshot%2026-08-13%164616.png) ![Chef Claude Recipe Bottom](readme_assets/Screenshot%2026-08-13%164759.png) |
 ---
