@@ -126,5 +126,3 @@ npm run dev
 
 * [LinkedIn](https://www.linkedin.com/in/shubham-ranwase)
 * [GitHub](https://github.com/shubhamranwase)
-
-```
